@@ -51,7 +51,7 @@ namespace MoldOffsetRecord_SiPlet
         {            
             _pointChart.ChartAreas[0].AxisX.Interval = 1;
             _pointChart.ChartAreas[0].AxisX.Minimum = 0;
-            _pointChart.ChartAreas[0].AxisX.Maximum = 15;
+            _pointChart.ChartAreas[0].AxisX.Maximum = 17;
 
             _pointChart.ChartAreas[0].AxisY.Interval = 0.02;
             _pointChart.ChartAreas[0].AxisY.Minimum = -0.3;
@@ -65,11 +65,11 @@ namespace MoldOffsetRecord_SiPlet
 
 
             // 기준선 Legend
-            _pointChart.Series["Marlin"].BorderWidth = 3;
-            _pointChart.Series["Marlin"].Color = Color.DarkOrange;
+            //_pointChart.Series["Marlin"].BorderWidth = 3;
+            //_pointChart.Series["Marlin"].Color = Color.DarkOrange;
 
-            _pointChart.Series["Monaco"].BorderWidth = 3;
-            _pointChart.Series["Monaco"].Color = Color.Fuchsia;
+            //_pointChart.Series["Monaco"].BorderWidth = 3;
+            //_pointChart.Series["Monaco"].Color = Color.Fuchsia;
         }
 
         public void Display()
@@ -226,7 +226,7 @@ namespace MoldOffsetRecord_SiPlet
                 var dataTable = new DataTable();                
                 // 열 제목 추가
                 dataTable.Columns.Add("Column1", typeof(string));
-                for (int i = 2; i <= 15; i++)
+                for (int i = 2; i <= 17; i++)
                 {
                     dataTable.Columns.Add($"Column{i}", typeof(string));
                 }
@@ -249,13 +249,19 @@ namespace MoldOffsetRecord_SiPlet
                 row2["Column4"] = lines.First(l => l.StartsWith("Left/Right")).Split(',')[1];
                 dataTable.Rows.Add(row2);
                 
-                // 세 번째 행 : 제목 (Point, 1, 2, ..., 14)
+                // 세 번째 행 : 제목 (Point, L-1~8, R-1~8)
                 var row3 = dataTable.NewRow();
                 row3["Column1"] = "Point";
-                for (int i = 2; i <= 15; i++)
+                for (int i = 2; i <= 9; i++)
                 {
-                    row3[$"Column{i}"] = (i - 1).ToString();                    
+                    row3[$"Column{i}"] = "L-" + (i - 1).ToString();                    
                 }
+
+                for (int i = 10; i <= 17; i++)
+                {
+                    row3[$"Column{i}"] = "R-" + (i - 9).ToString();
+                }
+
                 dataTable.Rows.Add(row3);
 
                 // 네 번째 행 : "X" 제목
@@ -278,8 +284,10 @@ namespace MoldOffsetRecord_SiPlet
                     }
                     else
                     {
-                        row4[$"Column{int.Parse(strValue[0]) + 1}"] = strValue[1];  // X값
-                        row5[$"Column{int.Parse(strValue[0]) + 1}"] = strValue[2];  // Y값        
+                        //row4[$"Column{int.Parse(strValue[0]) + 1}"] = strValue[1];  // X값
+                        //row5[$"Column{int.Parse(strValue[0]) + 1}"] = strValue[2];  // Y값        
+                        row4[$"Column{(i - 6) + 1}"] = strValue[1];  // X값
+                        row5[$"Column{(i - 6) + 1}"] = strValue[2];  // Y값        
                     }
                 }
 
@@ -349,8 +357,8 @@ namespace MoldOffsetRecord_SiPlet
                 }
 
                 // 기준선 그리기
-                AddMultipleReferenceLinesToChart_Marlin();
-                AddMultipleReferenceLinesToChart_Monaco();
+                //AddMultipleReferenceLinesToChart_Marlin();
+                //AddMultipleReferenceLinesToChart_Monaco();
 
                 // Chart를 새로 고침해서 그리기
                 _pointChart.Invalidate();

@@ -129,11 +129,11 @@ namespace MoldOffsetRecord_SiPlet
                 ISheet sheet = workbook.GetSheetAt(0);
                 // 엑셀 파일에서 마지막으로 사용된 행을 찾음
                 int lastRow = sheet.LastRowNum;
-                // 복사할 범위 (A1:O6)
+                // 복사할 범위 (A1:Q6)
                 int startRow = 0;   // Row 1
                 int endRow = 5;     // Row 6
                 int startCol = 0;   // Column A
-                int endCol = 14;    // Column O
+                int endCol = 16;    // Column O
                 int targetStartRow = lastRow + 1;   // 다음 빈 행부터 기록
                 for (int i = startRow; i <= endRow; i++)
                 {
@@ -178,8 +178,10 @@ namespace MoldOffsetRecord_SiPlet
                     }
                     else
                     {
-                        distanceXRow.GetCell(int.Parse(strValue[0])).SetCellValue(strValue[1]);  // Distance X
-                        distanceYRow.GetCell(int.Parse(strValue[0])).SetCellValue(strValue[2]);  // Distance Y
+                        //distanceXRow.GetCell(int.Parse(strValue[0])).SetCellValue(strValue[1]);  // Distance X
+                        //distanceYRow.GetCell(int.Parse(strValue[0])).SetCellValue(strValue[2]);  // Distance Y
+                        distanceXRow.GetCell(i - 6).SetCellValue(strValue[1]);  // Distance X
+                        distanceYRow.GetCell(i - 6).SetCellValue(strValue[2]);  // Distance Y
                     }
                 }
 

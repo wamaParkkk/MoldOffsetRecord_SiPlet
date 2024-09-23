@@ -29,15 +29,15 @@ namespace MoldOffsetRecord_SiPlet
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series45 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series46 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series47 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series48 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this._monthCalendar = new System.Windows.Forms.MonthCalendar();
             this._deviceComboBox = new System.Windows.Forms.ComboBox();
             this._searchButton = new System.Windows.Forms.Button();
@@ -203,29 +203,29 @@ namespace MoldOffsetRecord_SiPlet
             // 
             // _dataGridView
             // 
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            this._dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this._dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this._dataGridView.BackgroundColor = System.Drawing.Color.White;
             this._dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this._dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this._dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this._dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this._dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this._dataGridView.ColumnHeadersVisible = false;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this._dataGridView.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this._dataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this._dataGridView.Location = new System.Drawing.Point(473, 3);
             this._dataGridView.Name = "_dataGridView";
             this._dataGridView.ReadOnly = true;
@@ -237,32 +237,32 @@ namespace MoldOffsetRecord_SiPlet
             // _pointChart
             // 
             this._pointChart.BackColor = System.Drawing.Color.Cornsilk;
-            chartArea12.Name = "ChartArea1";
-            this._pointChart.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this._pointChart.Legends.Add(legend12);
+            chartArea1.Name = "ChartArea1";
+            this._pointChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this._pointChart.Legends.Add(legend1);
             this._pointChart.Location = new System.Drawing.Point(473, 409);
             this._pointChart.Name = "_pointChart";
-            series45.ChartArea = "ChartArea1";
-            series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series45.Legend = "Legend1";
-            series45.Name = "X";
-            series46.ChartArea = "ChartArea1";
-            series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series46.Legend = "Legend1";
-            series46.Name = "Y";
-            series47.ChartArea = "ChartArea1";
-            series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series47.Legend = "Legend1";
-            series47.Name = "Marlin";
-            series48.ChartArea = "ChartArea1";
-            series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series48.Legend = "Legend1";
-            series48.Name = "Monaco";
-            this._pointChart.Series.Add(series45);
-            this._pointChart.Series.Add(series46);
-            this._pointChart.Series.Add(series47);
-            this._pointChart.Series.Add(series48);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "X";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Y";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "기준선";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "기준선2";
+            this._pointChart.Series.Add(series1);
+            this._pointChart.Series.Add(series2);
+            this._pointChart.Series.Add(series3);
+            this._pointChart.Series.Add(series4);
             this._pointChart.Size = new System.Drawing.Size(1068, 591);
             this._pointChart.TabIndex = 9;
             this._pointChart.Text = "Point Chart";
@@ -278,6 +278,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label4.Size = new System.Drawing.Size(88, 15);
             this.label4.TabIndex = 10;
             this.label4.Text = "[Marlin] X-USL";
+            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -290,6 +291,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label5.Size = new System.Drawing.Size(85, 15);
             this.label5.TabIndex = 11;
             this.label5.Text = "[Marlin] X-LSL";
+            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -302,6 +304,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label6.Size = new System.Drawing.Size(87, 15);
             this.label6.TabIndex = 12;
             this.label6.Text = "[Marlin] Y-USL";
+            this.label6.Visible = false;
             // 
             // label7
             // 
@@ -314,6 +317,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label7.Size = new System.Drawing.Size(84, 15);
             this.label7.TabIndex = 13;
             this.label7.Text = "[Marlin] Y-LSL";
+            this.label7.Visible = false;
             // 
             // label8
             // 
@@ -326,6 +330,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label8.Size = new System.Drawing.Size(132, 15);
             this.label8.TabIndex = 14;
             this.label8.Text = "[Monaco] X-USL(MCO)";
+            this.label8.Visible = false;
             // 
             // label9
             // 
@@ -338,6 +343,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label9.Size = new System.Drawing.Size(154, 15);
             this.label9.TabIndex = 15;
             this.label9.Text = "[Monaco] X-USL(Pemtron)";
+            this.label9.Visible = false;
             // 
             // label10
             // 
@@ -350,6 +356,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label10.Size = new System.Drawing.Size(129, 15);
             this.label10.TabIndex = 17;
             this.label10.Text = "[Monaco] X-LSL(MCO)";
+            this.label10.Visible = false;
             // 
             // label11
             // 
@@ -362,6 +369,7 @@ namespace MoldOffsetRecord_SiPlet
             this.label11.Size = new System.Drawing.Size(151, 15);
             this.label11.TabIndex = 16;
             this.label11.Text = "[Monaco] X-LSL(Pemtron)";
+            this.label11.Visible = false;
             // 
             // PM1Form
             // 

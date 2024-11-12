@@ -29,6 +29,12 @@ namespace MoldOffsetRecord_SiPlet
                 string[] files = GetFileList();
                 foreach (string file in files)
                 {
+                    // 파일 이름에 "NULL"이 포함된 경우 스킵
+                    if (file.Contains("NULL"))
+                    {
+                        continue;
+                    }
+
                     if (ShouldDownloadFile(file))
                     {
                         string localFilePath = Path.Combine(_localDirectory, file);

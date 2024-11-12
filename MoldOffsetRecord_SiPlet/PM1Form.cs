@@ -188,6 +188,14 @@ namespace MoldOffsetRecord_SiPlet
 
             string selectedFile = _listBox.SelectedItem.ToString();
             string localFilePath = Path.Combine(Global.searchFileDirectory, selectedFile);
+
+            // 파일 이름에 "NULL"이 포함된 경우 스킵
+            if (selectedFile.Contains("NULL"))
+            {
+                MessageBox.Show($"지원하지 않는 파일 형식입니다", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             // FTP 서버에서 로컬 디렉토리로 CSV 파일 다운로드
             DownloadCsvFileFromFtp(selectedFile, localFilePath);
             

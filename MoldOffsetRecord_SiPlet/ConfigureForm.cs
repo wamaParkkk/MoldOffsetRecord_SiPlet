@@ -100,6 +100,12 @@ namespace MoldOffsetRecord_SiPlet
                 progressBar.Maximum = files.Length;
                 foreach (string file in files)
                 {
+                    // 파일 이름에 "NULL"이 포함된 경우 스킵
+                    if (file.Contains("NULL"))
+                    {
+                        continue;
+                    }
+
                     if (file.Contains(formattedDate) && file.EndsWith(".csv"))
                     {
                         string localFilePath = Path.Combine(Global.localLogFilePath, file);
